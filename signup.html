@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="script2.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+  <body>
+    <form action="POST" data-netlify="true" class="form">
+      <h1 class="text-center"><img src="images/logo.png" width="100%" height="80%" alt=""></h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title="Intro"
+        ></div>
+        <div class="progress-step" data-title="Contact"></div>
+        <div class="progress-step" data-title="ID"></div>
+        <div class="progress-step" data-title="Password"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="firstname">First Name*</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div class="input-group">
+          <label for="lastname">Last Name*</label>
+          <input type="text" name="position" id="position" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Phone*</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email*</label>
+          <input type="text" name="email" id="email" /> 
+          <br><label for="state">State*</label>
+          <input type="text" name="state" id="state" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="SSN">Upload Your SSN</label>
+          <input type="file" name="myssn" id="myssn" />
+        </div>
+        <div class="input-group">
+          <label for="driverlicense">Upload Your Drivers license<br>(Front view)*</label>
+          <input type="file" name="dl" id="dl" />
+<br>
+ <label for="driverlicense">Upload Your Drivers license<br>(Back view)*</label>
+          <input type="file" name="dl" id="dl" />
+  <br>   
+   <label for="stateid">Upload Your State ID *</label>
+          <input type="file" name="stateid" id="stateid" />
+     </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="password"> Create Password* </label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password*</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
